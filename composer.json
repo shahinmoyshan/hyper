@@ -19,11 +19,11 @@
             "Models\\": "./app/Models",
             "Views\\": "./app/Views",
             "Middlewares\\": "./app/Middlewares",
-            "Classes\\": "./app/Classes",
+            "Lib\\": "./app/Lib",
             "Providers\\": "./app/Providers"
         },
         "files": [
-            "./app/Web/functions.php"
+            "./setup/functions.php"
         ]
     },
     "config": {

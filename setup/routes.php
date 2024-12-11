@@ -25,7 +25,8 @@
  * 
  * 'method' is the HTTP method that the route should match.
  * 
- * 'callback' is a callback function that should be called when the route is
+ * 'callback' is a callback function that should be called when the route is 
+ * matched.
  *
  * @return array
  *     An array of route definitions.

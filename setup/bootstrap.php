@@ -22,7 +22,7 @@ use Hyper\Router;
  */
 return Application::make(
     path: dirname(__DIR__),
-    env: require __DIR__ . '/config.php'
+    env: require __DIR__ . '/env.php'
 )
     /**
      * Register service providers in the application container.

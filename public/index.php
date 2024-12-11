@@ -10,11 +10,8 @@
  * @return void
  */
 
-// define application root directory path.
-define('ROOT_DIR', dirname(__DIR__));
-
-// include composer autoload
-require __DIR__ . '/../vendor/autoload.php';
+// Load the Composer autoloader for the application
+require dirname(__DIR__) . '/vendor/autoload.php';
 
 /**
  * Runs the bootstrap process.
@@ -25,5 +22,5 @@ require __DIR__ . '/../vendor/autoload.php';
  *
  * @return void
  */
-(require __DIR__ . '/../app/Web/bootstrap.php')
+(require dirname(__DIR__) . '/setup/bootstrap.php')
     ->run();
