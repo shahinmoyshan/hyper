@@ -11,7 +11,7 @@ use Hyper\Container;
  * application. The service providers in this file are only loaded
  * when the application is running in web mode.
  */
-class appServiceProvider
+class AppServiceProvider
 {
     /**
      * Registers services in the application container.

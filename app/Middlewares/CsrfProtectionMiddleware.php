@@ -6,13 +6,13 @@ use Hyper\Request;
 use Hyper\Response;
 
 /**
- * Class csrfProtectionMiddleware
+ * Class CsrfProtectionMiddleware
  * 
  * CSRF protection middleware class. This class is responsible for
  * validating the CSRF token sent in the request. If the token is
  * invalid or missing, it returns a 403 Forbidden response.
  */
-class csrfProtectionMiddleware
+class CsrfProtectionMiddleware
 {
     /**
      * CSRF protection middleware.

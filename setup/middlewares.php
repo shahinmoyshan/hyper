@@ -11,5 +11,5 @@
  */
 return [
     // CSRF protection middleware
-    'csrf' => \Middlewares\csrfProtectionMiddleware::class,
+    'csrf' => \Middlewares\CsrfProtectionMiddleware::class,
 ];
