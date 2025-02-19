@@ -22,5 +22,5 @@ require dirname(__DIR__) . '/vendor/autoload.php';
  *
  * @return void
  */
-(require dirname(__DIR__) . '/setup/bootstrap.php')
+(require dirname(__DIR__) . '/bootstrap/app.php')
     ->run();

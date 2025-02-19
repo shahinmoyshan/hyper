@@ -23,7 +23,7 @@
             "Providers\\": "./app/Providers"
         },
         "files": [
-            "./setup/functions.php"
+            "./bootstrap/functions.php"
         ]
     },
     "config": {
