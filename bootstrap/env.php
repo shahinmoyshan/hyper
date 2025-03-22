@@ -8,16 +8,18 @@
  *     An associative array of settings.
  */
 
+$dirpath = fn(string $path): string => dir_path(dirname(__DIR__) . '/' . $path);
+
 return [
     // Debugging settings
     'debug' => true,
 
     // Directory paths
-    'storage_dir' => __DIR__ . '/../storage', // Storage directory
-    'cache_dir' => __DIR__ . '/../storage/cache', // Cache files directory
-    'upload_dir' => __DIR__ . '/../public/uploads', // Upload directory
-    'template_dir' => __DIR__ . '/../app/Templates', // Template directory
-    'lang_dir' => __DIR__ . '/../i18n', // Language files directory
+    'storage_dir' => $dirpath('storage'), // Storage directory
+    'cache_dir' => $dirpath('storage/cache'), // Cache files directory
+    'upload_dir' => $dirpath('public/uploads'), // Upload directory
+    'template_dir' => $dirpath('app/Templates'), // Template directory
+    'lang_dir' => $dirpath('i18n'), // Language files directory
 
     // URL settings
     'media_url' => '/uploads/', // Media URL
@@ -27,11 +29,11 @@ return [
     'lang' => 'en', // Default language
 
     // Security settings
-    'app_key' => 'vHQBPufA2RSQYuk/ySGkBzQwrs6m1aM/NCdhx+DczhA=', // Application key, replace with a 32 characters long unique string
+    'app_key' => '4c5d44fb54e7830cb7b7f455514e408124f9f9372f071a9eeba2797386767bc2', // Application key, replace with a 32 characters long unique string
 
     // Database connection settings
     'database' => [
         'driver' => 'sqlite', // Database driver
-        'file' => __DIR__ . '/../sqlite.db', // SQLite Database filepath 
+        'file' => $dirpath('storage/sqlite.db'), // SQLite Database filepath 
     ],
 ];
