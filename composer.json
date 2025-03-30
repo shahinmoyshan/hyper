@@ -1,8 +1,8 @@
 {
     "name": "vulcanphp/hyper",
     "type": "project",
-    "description": "Sweet and MVT Based Php Tiny Web Framework",
-    "keywords": ["vulcanphp", "hyper", "mvt", "web framework", "php framework"],
+    "description": "Sweet and MVC Based Php Tiny Web Framework",
+    "keywords": ["vulcanphp", "hyper", "mvc", "web framework", "php framework", "framework"],
     "license": "MIT",
     "require": {
         "php": ">=8.2",
@@ -16,14 +16,12 @@
     ],
     "autoload": {
         "psr-4": {
-            "Models\\": "./app/Models",
-            "Views\\": "./app/Views",
-            "Middlewares\\": "./app/Middlewares",
-            "Lib\\": "./app/Lib",
-            "Providers\\": "./app/Providers"
-        },
-        "files": [
-            "./bootstrap/functions.php"
+            "App\\": "./app"
+        }
+    },
+    "scripts": {
+        "post-root-package-install": [
+            "@php -r \"file_put_contents('env.php', str_replace('{APP_KEY}', bin2hex(random_bytes(16)), file_get_contents('env.example.php')));\""
         ]
     },
     "config": {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Middlewares;
+namespace App\Http\Middlewares;
 
 use Hyper\Middlewares\CorsAccessControl;
 

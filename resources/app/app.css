@@ -8,5 +8,5 @@
 
 @import 'tailwindcss';
 
-@source '../../app/Templates/**/*.php';
-@source '../**/*.js';
+@source '../views/**/*.php';
+@source './**/*.js';

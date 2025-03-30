@@ -13,25 +13,25 @@ return [
     'debug' => true,
 
     // Directory paths
-    'storage_dir' => __DIR__ . '/../storage', // Storage directory
-    'cache_dir' => __DIR__ . '/../storage/cache', // Cache files directory
-    'upload_dir' => __DIR__ . '/../public/uploads', // Upload directory
-    'template_dir' => __DIR__ . '/../app/Templates', // Template directory
-    'lang_dir' => __DIR__ . '/../i18n', // Language files directory
+    'storage_dir' => __DIR__ . '/storage', // Storage directory
+    'cache_dir' => __DIR__ . '/storage/cache', // Cache files directory
+    'upload_dir' => __DIR__ . '/public/uploads', // Upload directory
+    'views_dir' => __DIR__ . '/resources/views', // Template directory
+    'lang_dir' => __DIR__ . '/languages', // Language files directory
 
     // URL settings
     'media_url' => '/uploads/', // Media URL
-    'asset_url' => '/resources/', // Asset URL
+    'asset_url' => '/assets/', // Asset URL
 
     // Localization settings
     'lang' => 'en', // Default language
 
     // Security settings
-    'app_key' => '4c5d44fb54e7830cb7b7f455514e408124f9f9372f071a9eeba2797386767bc2', // Application key for encryption
+    'app_key' => '{APP_KEY}', // Application key for encryption
 
     // Database connection settings
     'database' => [
         'driver' => 'sqlite', // Database driver
-        'file' => __DIR__ . '/../storage/sqlite.db', // SQLite Database filepath 
+        'file' => __DIR__ . '/storage/sqlite.db', // SQLite Database filepath 
     ],
 ];
